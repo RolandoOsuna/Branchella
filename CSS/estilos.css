@@ -1,0 +1,16 @@
+
+
+
+/* HEADER */
+.header{
+    background-image: url(../media/bg-header.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.header img{
+    width: 20%;
+    margin: 13rem 0 0 15rem;
+
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.672));
+}
