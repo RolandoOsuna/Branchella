@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Inicio</title>
 </head>
 <body style="font-family: 'Mustica Pro';">
@@ -30,19 +32,19 @@
        
         <div class="row text-white text-shadow">
             <div class="col-12 col-lg-6 text-center text-lg-start ">
-                <img class=" img-letrero shadow " src="media/Letrero.png"  >
+                <img class=" img-letrero shadow " src="media/Letrero.png"  data-aos="fade-down-right" >
             </div>
             <div class="col-12 col-lg-6 pt-lg-5 ps-lg-5 d-none d-lg-block" >
                 <div class="cuadro-section-1"></div>
                 <p class="fs-3 text-center text-lg-start pt-lg-5">Lorem, ipsum</p>
                 <p class="display-2 text-center text-lg-start">Lorem, ipsum.</p>
-                <img class=" img-section-1 shadow" src="media/Section-1.jpeg">
+                <img class=" img-section-1 shadow" src="media/Section-1.jpeg"data-aos="zoom-in-down">
             </div>
             <div class="col-12 col-lg-6 pt-lg-5 ps-lg-5 d-block d-lg-none " style="margin-top: 400px;" >
                 <div class="cuadro-section-1"></div>
                 <p class="fs-3 text-center text-lg-start pt-lg-5">Lorem, ipsum</p>
                 <p class="display-2 text-center text-lg-start">Lorem, ipsum.</p>
-                <img class=" img-section-1 shadow" src="media/Section-1.jpeg">
+                <img class=" img-section-1 shadow" src="media/Section-1.jpeg "data-aos="zoom-in-down">
             </div>
         </div>
         <div class="row">
@@ -63,7 +65,7 @@
                 </p>
             </div>
             <div class="col-12 col-lg-6">
-                <img class="img-fluid" src="media/Aside-section-2.png">
+                <img class="img-fluid" src="media/Aside-section-2.png" data-aos="fade-zoom">
             </div>
         </div>
     </section>
@@ -74,10 +76,10 @@
             <h1 class="display-1 p-5" style="color:#fd5586">Servicios</h1>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-3"><img class="img-fluid" src="media/Peinados.jpg" width="100%"></div>
-            <div class="col-12 col-lg-3"><img class="img-fluid" src="media/Manicura.jpg" width="100%"></div>
-            <div class="col-12 col-lg-3"><img class="img-fluid" src="media/skin care.jpg" width="100%"></div>
-            <div class="col-12 col-lg-3"><img class="img-fluid" src="media/spa.jpg" width="100%"></div>
+            <div class="col-12 col-lg-3"><img class="img-fluid" src="media/Peinados.jpg" width="100%" data-aos="fade-down"></div>
+            <div class="col-12 col-lg-3"><img class="img-fluid" src="media/Manicura.jpg" width="100%" data-aos="fade-up"></div>
+            <div class="col-12 col-lg-3"><img class="img-fluid" src="media/skin care.jpg" width="100%" data-aos="fade-down"></div>
+            <div class="col-12 col-lg-3"><img class="img-fluid" src="media/spa.jpg" width="100%" data-aos="fade-up"></div>
         </div>
     </section>
     <!-- SECTION-4 -->
@@ -85,13 +87,13 @@
         <div class="cuadro-section-4"></div>
         <div class="row ">
             <div class="col-12 col-lg-6 text-center text-lg-start">
-                <img class=" img-fluid filter-shadow mt-5" src="media/Section-4.png" width="90%" >
+                <img class=" img-fluid filter-shadow mt-5 " src="media/Section-4.png" width="90%" data-aos="fade-down-right">
             </div>
             <div class="col-12 col-lg-6 pt-5 px-3 mt-lg-5 px-lg-5 ">
                 <p class="display-5 text-lg-end"style="color:#fd5586">Lorem, ipsum.</p>
                 <p class="fs-section-4 text-lg-end ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo odio voluptatum harum et nihil, dolorem placeat culpa corporis ducimus aspernatur laudantium non deserunt officiis.</p>
                 <div class="text-center">
-                    <img class=" img-fluid filter-shadow margen-section-4" src="media/Packaging.png" >
+                    <img class=" img-fluid filter-shadow margen-section-4" src="media/Packaging.png" data-aos="fade-up-left">
                 </div>
             </div>
         </div>
@@ -110,7 +112,7 @@
             </div>
         </div>
         <div class="row">
-            <img class="" src="media/section-5.jpg" style="height: 50vh;object-fit: cover;">
+            <img class="thumbnail" src="media/section-5.jpg" style="height: 50vh;object-fit: cover;" width="100%">
         </div>
         <div class="container">
             <div class="row pt-5 pt-lg-0">
@@ -136,5 +138,15 @@
         </div>
     </footer>
 
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+<script>
+    var image = document.getElementsByClassName('thumbnail');
+    new simpleParallax(image);
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
